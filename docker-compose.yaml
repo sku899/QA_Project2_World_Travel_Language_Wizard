@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    image: python-frontend:blue
+    ports:
+    - target: 5000
+      published: 5000
+  backend:
+    container_name: backend
+    build: ./backend
+    image: python-backend:letters
+    ports:
+    - target: 5001
+      published: 5001
