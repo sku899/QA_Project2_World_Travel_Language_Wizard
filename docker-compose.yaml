@@ -3,14 +3,14 @@ services:
   frontend:
     container_name: frontend
     build: ./frontend
-    image: python-frontend:blue
+    image: python-frontend:latest
     ports:
     - target: 5000
       published: 5000
   backend:
     container_name: backend
     build: ./backend
-    image: python-backend:letters
+    image: python-backend:latest
     ports:
     - target: 5001
       published: 5001
