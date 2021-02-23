@@ -7,10 +7,27 @@ services:
     ports:
     - target: 5000
       published: 5000
+  generator01:
+    container_name: generator01
+    build: ./generator01
+    image: python-generator01:latest
+    ports:
+    - target: 5001
+      published: 5001
+
+  generator02:
+    container_name: generator02
+    build: ./generator02
+    image: python-generator02:latest
+    ports:
+    - target: 5002
+      published: 5002
+
+
   backend:
     container_name: backend
     build: ./backend
     image: python-backend:latest
     ports:
-    - target: 5001
-      published: 5001
+    - target: 5003
+      published: 5003
