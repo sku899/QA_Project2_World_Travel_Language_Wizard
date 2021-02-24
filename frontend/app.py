@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 import requests
 from os import getenv
 from random import randint
@@ -15,7 +15,9 @@ def home():
     result = requests.get("http://backend:5003/random")
     colours =["blue","green", "yellow"]
     colour = colours[randint(0,2)]
-    return result.text
+    result2 = requests.get("http://backend:5003/randomtemp")
+    result2_dict = result2.json()
+    return result2_dict["word"] + " in " +result2_dict["country"] + " is " +result2_dict["translate"]
     # return f"<body style='background-color:{colour};'>\n<h1>Hello.</h1>\n\n<h2>I'm currently running in {hostname}.</h2>\n\n" + \
     #  f"<h2>The backend I'm chatting with is running in {backend01_hostname.text}</h2>\n\n<h3>The backend gave me this to show you: {random.text}</h3>\n\n"+ \
     #      f"<h2>The backend I'm chatting with is running in {backend_hostname.text}</h2>\n\n<h3>The backend gave me this to show you: {random.text}</h3>"
