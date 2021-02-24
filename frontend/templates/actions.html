@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Display Random Result</title>
+    </head>
+    <body>
+        <div class='form'>
+            <form method='POST, GET' action=''>
+                {{ form.hidden_tag() }}
+                {{ message }}
+                <b style="color:blue"><p style="font-size:30px">{{word}}</p></b>
+                <br>
+                <b style="color:black"><p style="font-size:20px">{{country}}</p></b>
+                <br>
+                <b style="color:green"><p style="font-size:30px">{{translate}}</p></b>
+                {{ form.submit }}
+            
+            </form>
+        </div>
+    </body>
+</html>
