@@ -9,7 +9,7 @@ class TestBase(TestCase):
         return app
 
 class TestResponse(TestBase):
-    def rand_country(self):
+    def random_country(self):
         country = [b"1", b"2", b"3", b"4"]
         response = self.client.get(url_for("random_generator"))
         self.assertIn(response.data, country)
