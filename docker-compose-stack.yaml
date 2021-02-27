@@ -1,0 +1,39 @@
+version: '3.7'
+services:
+  frontend:
+    image: sabinaku/frontend_v2 #python-front-and-back_frontend_1
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+  backend:
+    #image: python-front-and-back_backend_1
+    image: sabinaku/backend_v2
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
+  generator01:
+    #image: python-front-and-back_generator01_1
+    image: sabinaku/generator01_v2
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5001
+     
+      published: 5001
+      protocol: tcp
+  generator02:
+    #image: python-front-and-back_generator02_1
+    image: sabinaku/generator02_v2
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+      
