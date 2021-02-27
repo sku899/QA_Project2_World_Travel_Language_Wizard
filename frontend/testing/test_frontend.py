@@ -9,7 +9,7 @@ class TestBase(TestCase):
         return app
 
 class TestResponse(TestBase):
-    def test_card_face_page(self):
+    def test_frontend(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
 
