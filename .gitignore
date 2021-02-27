@@ -2,18 +2,22 @@ backend/.coverage
 backend/__pycache__/
 backend/.pytest_cache
 backend/testing/__pycache__/
+backend/testing/.coverage
 
 frontend/.coverage
 frontend/__pycache__/
 frontend/.pytest_cache
 frontend/testing/__pycache__/
+frontend/testing/.coverage
 
 generator01/.coverage
 generator01/__pycache__/
 generator01/.pytest_cache
 generator01/testing/__pycache__/
+generator01/testing/.coverage
 
 generator02/.coverage
 generator02/__pycache__/
 generator02/.pytest_cache
 generator02/testing/__pycache__/
+generator02/testing/.coverage
