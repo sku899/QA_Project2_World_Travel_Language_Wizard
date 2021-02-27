@@ -10,8 +10,8 @@ def hostname():
 
 @app.route("/random")
 def random_generator():
-    
-    return str(randint(1,8))
+    no_of_countries = 10
+    return str(randint(1,no_of_countries))
 
 if __name__=="__main__":
     app.run(host = "0.0.0.0", port = 5001, debug = True)
