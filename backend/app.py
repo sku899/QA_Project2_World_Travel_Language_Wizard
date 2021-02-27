@@ -2,7 +2,6 @@ from flask import Flask, jsonify
 from os import getenv
 from random import randint
 import requests
-# from p2_tables import db, Events
 
 app = Flask(__name__)
 
@@ -10,67 +9,34 @@ app = Flask(__name__)
 def hostname():
     return str(getenv("HOSTNAME"))
 
-@app.route("/random")
-def random_generator():
-    countries = {'1': 'German', '2':'Spain', '3':'France', '4':'Russia', '5':'China', '6':'Portugal','7':'India','8':'Arabic'}
-
-    welcome = {'German': 'Willkommen', 'Spain': 'Bienvenida, Bienvenido', 'France':'Bienvenue, Bienvenu', \
-        'Russia':'Добро пожаловать', 'China':'欢迎', 'Portugal':'Receber','India':'स्वागत हे','Arabic':'أهلا بك'}
-    
-    thankyou={'German': 'Danke', 'Spain': 'Gracias', 'France':'Merci', \
-        'Russia':'Спасибо', 'China':'谢谢你', 'Portugal':'Obrigada', 'India':'जी शुक्रिया','Arabic':'شكرا لك'}
-
-    goodmoring={'German': 'Guten Morgen', 'Spain': 'Buenos Días', 'France':'Comment allez-vous', \
-        'Russia':'доброе утро', 'China':'早上好', 'Portugal':'Bom Dia', 'India':'शुभ प्रभात','Arabic':'صباح الخير'}
-
-    howareyou = {'German': 'Wie geht es Ihnen', 'Spain': 'Cómo Estás', 'France':'Bonjour', \
-        'Russia':'как дела', 'China':'你好吗', 'Portugal':'Como você está', 'India':'होर सुनाओ','Arabic':'كيف حالك'}
-
-    original_words = {'1': 'Welcome', '2':'Thank You', '3': 'Good Morning', '4': 'How are you'}    
-    translates = [welcome, thankyou, goodmoring, howareyou]
-    #backend01_hostname = requests.get("http://backend01:5001/hostname")
-    country = requests.get("http://generator01:5001/random")
-    translate = requests.get("http://generator02:5002/random")
-     #r = str(randint(1,8))
-    fontcolor=['<b style="color:blue">', '<b style="color:black">', '<b style="color:green">']
-    fontsize = ['<p style="font-size:30px">', '<p style="font-size:20px">', '<p style="font-size:40px">']
-    result = fontcolor[0]+fontsize[0] + '"' + original_words[translate.text]+'"'+"</p></b><br>" +  \
-                fontcolor[1]+fontsize[1] + ' in  ' +  countries[country.text]  +' is ' +"</p></b><br>" +  \
-                fontcolor[2]+fontsize[2] + translates[int(translate.text)-1][countries[country.text]]+"</p></b><br>"
-
-    return result
-    #return f"Welcome in {countries[r.text]} is {welcome[countries[r.text]]}"
-
-# 
 @app.route("/randomtemp")
 def random_generator_temp():
-    countries = {'1': 'German', '2':'Spain', '3':'France', '4':'Russia', '5':'China', '6':'Portugal','7':'India','8':'Arabic'}
+    countries = ['German', 'Spanish', 'French', 'Russian', 'Chinese', 'Portuguese','Hindi','Arabic','Japanese', 'Korean'] #10 countries
 
-    welcome = {'German': 'Willkommen', 'Spain': 'Bienvenida, Bienvenido', 'France':'Bienvenue, Bienvenu', \
-        'Russia':'Добро пожаловать', 'China':'欢迎', 'Portugal':'Receber','India':'स्वागत हे','Arabic':'أهلا بك'}
+    welcome = {countries[0]: 'Willkommen', countries[1]: 'Bienvenida, Bienvenido', countries[2]:'Bienvenue, Bienvenu', \
+        countries[3]:'Добро пожаловать', countries[4]:'欢迎', countries[5]:'Receber',countries[6]:'स्वागत हे',countries[7]:'أهلا بك', \
+        countries[8]:'ようこそ',countries[9]:'어서 오십시오'}
     
-    thankyou={'German': 'Danke', 'Spain': 'Gracias', 'France':'Merci', \
-        'Russia':'Спасибо', 'China':'谢谢你', 'Portugal':'Obrigada', 'India':'जी शुक्रिया','Arabic':'شكرا لك'}
+    thankyou={countries[0]: 'Danke', countries[1]: 'Gracias', countries[2]:'Merci', \
+        countries[3]:'Спасибо', countries[4]:'谢谢你', countries[5]:'Obrigada', countries[6]:'जी शुक्रिया',countries[7]:'شكرا لك', \
+        countries[8]:'ありがとうございました',countries[9]:'감사합니다'}
 
-    goodmoring={'German': 'Guten Morgen', 'Spain': 'Buenos Días', 'France':'Comment allez-vous', \
-        'Russia':'доброе утро', 'China':'早上好', 'Portugal':'Bom Dia', 'India':'शुभ प्रभात','Arabic':'صباح الخير'}
+    goodmoring={countries[0]: 'Guten Morgen', countries[1]: 'Buenos Días', countries[2]:'Comment allez-vous', \
+        countries[3]:'доброе утро', countries[4]:'早上好', countries[5]:'Bom Dia', countries[6]:'शुभ प्रभात',countries[7]:'صباح الخير', \
+        countries[8]:'おはようございます',countries[9]:'좋은 아침'}
 
-    howareyou = {'German': 'Wie geht es Ihnen', 'Spain': 'Cómo Estás', 'France':'Bonjour', \
-        'Russia':'как дела', 'China':'你好吗', 'Portugal':'Como você está', 'India':'होर सुनाओ','Arabic':'كيف حالك'}
+    howareyou = {countries[0]: 'Wie geht es Ihnen', countries[1]: 'Cómo Estás', countries[2]:'Bonjour', \
+        countries[3]:'как дела', countries[4]:'你好吗', countries[5]:'Como você está', countries[6]:'होर सुनाओ',countries[7]:'كيف حالك', \
+        countries[8]:'お元気ですか',countries[9]:'어떻게 지내'}
 
-    original_words = {'1': 'Welcome', '2':'Thank You', '3': 'Good Morning', '4': 'How are you'}    
+    original_words = ['Welcome', 'Thank You','Good Morning', 'How are you']    
     translates = [welcome, thankyou, goodmoring, howareyou]
-    #backend01_hostname = requests.get("http://backend01:5001/hostname")
     country = requests.get("http://generator01:5001/random")
     translate = requests.get("http://generator02:5002/random")
-     #r = str(randint(1,8))
-    fontcolor=['<b style="color:blue">', '<b style="color:black">', '<b style="color:green">']
-    fontsize = ['<p style="font-size:30px">', '<p style="font-size:20px">', '<p style="font-size:40px">']
-    result =  jsonify({"message":"No ids provided.",
-                    "category":"error"})
-    return jsonify(hello ='helloworld', country=countries[country.text], word=original_words[translate.text], translate=translates[int(translate.text)-1][countries[country.text]])
-
-    # return jsonify(hello='world')
+    word = original_words[int(translate.text)-1]
+    country = countries[int(country.text)-1]
+    translate=translates[int(translate.text)-1][country]
+    return jsonify(hello ='helloworld', country=country, word=word, translate=translate)
 
 
 # 
