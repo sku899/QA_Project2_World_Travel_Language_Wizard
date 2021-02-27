@@ -1,20 +1,30 @@
 <html>
     <head>
         <title>Display Random Result</title>
+
     </head>
-    <body>
+    <style type="text/css" media="screen">
+        pos {
+                        position:absolute;
+                        left:12em;
+                        top:125px;
+        }
+    </style>
+    <body background="World_Travel_Language_Wizard.jpg">
+        <h1>        Hello World!       </h1>
+        <h1>World Travel Language Wizard</h1>
+        <img src="{{url_for('static', filename='World_Travel_Language_Wizard.jpg')}}" style="height:150px; border-radius: 50%;">
         <div class='form'>
             <form method='POST, GET' action=''>
                 {{ form.hidden_tag() }}
                 {{ message }}
                 <b style="color:blue"><p style="font-size:30px">{{word}}</p></b>
-                <br>
                 <b style="color:black"><p style="font-size:20px">{{country}}</p></b>
-                <br>
                 <b style="color:green"><p style="font-size:30px">{{translate}}</p></b>
                 {{ form.submit }}
             
             </form>
         </div>
+        </body>
     </body>
 </html>
