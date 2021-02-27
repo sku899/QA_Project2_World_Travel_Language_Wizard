@@ -9,14 +9,21 @@ class TestBase(TestCase):
         return app
 
 class TestResponse(TestBase):
-    def random_word(self):
-        country = [b"1", b"2", b"3", b"4"]
+    def rand_first_translate (self):
+        first_translate = ['Willkommen', 'Danke', 'Guten Morgen', 'Wie geht es Ihnen']
         response = self.client.get(url_for("random_generator"))
-        self.assertIn(response.data, country)
+        self.assertIn(first_translate[int(response.data.decode('utf-8'))-1], first_translate)
 
-    def test_word(self):
+
+    def rand_tenth_translate (self):
+        tenth_translate = ['어서 오십시오','감사합니다','좋은 아침', '어떻게 지내']
+        response = self.client.get(url_for("random_generator"))
+        self.assertIn(tenth_translate[int(response.data.decode('utf-8'))-1], tenth_translate)
+
+
+    def test_country(self):
         with patch("requests.get") as g:
             g.return_value.text = b"1"
             response = self.client.get(url_for("random_generator"))
-            response = b"1"
-            self.assertIn(b"1", response)
+            random_output = ['1','2','3','4']
+            self.assertIn(response.data.decode('utf-8'), random_output)

@@ -11,7 +11,7 @@ class TestBase(TestCase):
 class TestResponse(TestBase):
     def test_frontend(self):
         with patch("requests.get") as g:
-            g.return_value.text = "1"
-
+            g.return_value.text = "World"
             response = self.client.get(url_for("home"))
-            self.assertIn(b'1', response.data)
+            self.assertEqual(response.status_code,200)
+            self.assertIn(b"World", response.data)
