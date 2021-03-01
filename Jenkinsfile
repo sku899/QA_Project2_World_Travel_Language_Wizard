@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_LOGIN = credentials("DOCKERHUB_LOGIN")
+        
     }
     stages {
         stage('Test'){
