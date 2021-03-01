@@ -2,5 +2,5 @@
 
 scp -i ./ssh/id_rsa /home/jenkins/.jenkins/workspace/project2pipeline/docker-compose-stack.yaml jenkins@35.247.113.36:docker-compose-stack.yaml
 ssh -i ./ssh/id_rsa jenkins@35.247.113.36 << EOF
-docker stack deploy --compose-file docker-compose-stack.yaml 
+docker stack deploy --prune --with-registry-auth --resolve-image=always --compose-file docker-compose-stack.yaml
 EOF
