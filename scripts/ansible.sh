@@ -1,3 +1,4 @@
 #!/bin/bash
-cd ~/.jenkins/workspace/project2pipeline
-ansible-playbook -i inventory.yaml playbook.yaml 
+cd ansible_project2
+ansible-playbook -i inventory.yaml playbook.yaml
+cd ..
