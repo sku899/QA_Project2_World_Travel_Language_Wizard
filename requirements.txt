@@ -1,0 +1,7 @@
+flask
+requests
+Werkzeug
+pytest 
+pytest-cov
+Jinja2
+flask-testing
