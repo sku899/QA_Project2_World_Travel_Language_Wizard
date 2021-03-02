@@ -49,7 +49,7 @@ For each service requires a specific Dockerfile, the following is an example of 
 After the image is built, it can be uploaded into DockerHub where the images can be stored accessed and shared. For example, the next diagram shows part of images stored in DockerHub for this project. The diagram show four images in DockerHub for the services of backend, generatot02, generator01 and frontend respectively.  
 
 
-![cpart of docker images](img/dockerhub.png)
+![cpart of docker images](img/dockerhub.PNG)
 
 ### **3.2 Docker Compose** 
 Docker Compose is a tool for Docker that allows you to define and run multiple Docker containers.rding to Docker documentation,
