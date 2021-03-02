@@ -1,7 +1,7 @@
 ![project logo](img/World_Travel_Language_Wizard.jpg)
 # **World Travel Language Wizard** #
 
-##1. **Project Brief** ##
+##1. **Project Brief**
 This project is an app which will randomly generate one of the four common English phrases for travelling in another language (randomly selected from 10 languages).
 
 The app includes 4 services, frontend, backend, generator01 and generator02. Each service has its own specific function. 
