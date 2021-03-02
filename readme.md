@@ -291,7 +291,7 @@ The test of this project is tested by Pytest. The function of each service is te
 The coverage on each service:frontend 95%, backend 91%, generator01: 82, generator02: 82%
 
 ## **7. Front End** ##
-####This project is to create stable and efficient backend infrastructure and use DevOps technologies to automate web based services. The front-end of this project provides the interface with features and functions to get the desired results. The demo of the Fronend of the application is as follows.
+This project is to create stable and efficient backend infrastructure and use DevOps technologies to automate web based services. The front-end of this project provides the interface with features and functions to get the desired results. The demo of the Fronend of the application is as follows.
 
 Here are screenshots of my app when running:
 ![Frontend_demo01](img/frontend_demo01.png)
