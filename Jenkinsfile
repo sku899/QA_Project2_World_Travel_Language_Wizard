@@ -8,12 +8,6 @@ pipeline {
                 sh './scripts/test.sh'
             }
         }
-        stage('Build and Push'){
-            steps{
-                sh 'chmod +x ./scripts/buildandpush.sh'
-                sh './scripts/buildandpush.sh'
-            }
-        }
 
         stage('Ansible'){
             steps{
