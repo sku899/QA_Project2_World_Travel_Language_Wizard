@@ -295,9 +295,9 @@ The coverage on each service:frontend 95%, backend 91%, generator01: 82, generat
 
 Here are screenshots of my app when running:
 ![Frontend_demo01](img/frontend_demo01.png)
-![Frontend_demo02](img/frontend_demo02.png)
-![Frontend_demo03](img/frontend_demo03.png)
-![Frontend_demo04](img/frontend_demo04.png)
+![Frontend_demo02](img/frontend_demo02.PNG)
+![Frontend_demo03](img/frontend_demo03.PNG)
+![Frontend_demo04](img/frontend_demo04.PNG)
 
 ## **8. Evaluation** ##
 ### Challenges
