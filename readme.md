@@ -179,7 +179,7 @@ Below is my Kanban board for this project
 
 ## **5. Risk Assessment**
 The Risk Assessment associated with this project is as below.
-![Risk Assessment](img/Risk_Assessment.PNG)
+![Risk Assessment](img/risk_assessment.PNG)
 
 
 ## **6. Testing**
