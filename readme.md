@@ -52,7 +52,7 @@ After the image is built, it can be uploaded into DockerHub where the images can
 ![cpart of docker images](img/dockerhub.PNG)
 
 ### **3.2 Docker Compose** 
-Docker Compose is a tool for Docker that allows you to define and run multiple Docker containers.rding to Docker documentation,
+Docker Compose is a tool for Docker that allows you to define and run multiple Docker containers to Docker documentation,
 
 > **Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. Compose works in all environments: production, staging, development, testing, as well as CI workflows.**
 
