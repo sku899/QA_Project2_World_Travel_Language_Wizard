@@ -166,7 +166,7 @@ Stacks allow to deploy multiple services in a Swarm from a single configuration 
 
 Jenkins stage view monitors the whole pipeline of application development stage from source code management, build, testing, to deploying. I divide the pipeline for my project to 4 stages Test, Build, Ansible and Deploying the services. I use the GitHub webhook to automate the pipeline process in Jenlins.
 #### Below is a image of Jenkins Stage View
-![Jenkins_StageView](img/Jenkins_StageView.PNG)
+![Jenkins_StageView](img/Jenkins_Stage_View.PNG)
 
 ### **3.7 Ansible** 
 In this project, I use Ansible as a Deployment tool in a Continuous Integration/Continuous Deployment process using Jenkins Job.
