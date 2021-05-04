@@ -9,6 +9,7 @@ The app includes 4 services, frontend, backend, generator01 and generator02. Eac
 This project is implemented by using the following technologies,
 
 ![technologies](img/technologies.png)
+![CI_CD_Pipeline](img/CI_CD_Pipeline.png)
 
 ## **2. Service Architecture of this Project**
 
@@ -304,15 +305,12 @@ Here are screenshots of my app when running:
 This project involves 4 VM and 4 Services with very complicated configurations and settings between different VM, applications etc. The files and codes need to be organised and maintained well.  
 
 ### Improvements
-The functions and languages I developed for the applications is limited due to the time constraint; however, this application can be further developed to a commercial product for education or business use.
-
+The functions and languages I developed for the applications is limited due to the time constraint; however, this application can be further developed to a commercial product for educational use.
 
 ## **9. Licensing** ##
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 This permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-## **10. Acknowledgements** ##
-I would like to thank my trainers for providing me with a good understanding and quality of teaching before and during the project..
 
 ## **11.Author** ##
 ## Sabina Ku
