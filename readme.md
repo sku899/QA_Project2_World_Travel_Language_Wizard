@@ -2,11 +2,11 @@
 # **World Travel Language Wizard** #
 
 ## **1. Project Brief**
-This project is an app which will randomly generate one of the four common English phrases for travelling in another language (randomly selected from 10 languages).
+### **This project is an app which will randomly generate one of the four common English phrases for travelling in another language (randomly selected from 10 languages).
 
 The app includes 4 services, frontend, backend, generator01 and generator02. Each service has its own specific function. 
 
-This project is implemented by using the following technologies,
+This project is implemented by using the following Technologies and Pipeline 
 
 ![technologies](img/technologies.png)
 ![CI_CD_Pipeline](img/CI_CD_Pipeline.png)
@@ -312,5 +312,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 This permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## **11.Author** ##
+## **10.Author** ##
 ## Sabina Ku
